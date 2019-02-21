@@ -43,6 +43,10 @@
     @apply bg-blue rounded shadow no-underline py-4 px-10 text-white;
 }
 
+.card {
+    @apply block bg-white rounded shadow p-5 no-underline text-black;
+}
+
 /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.

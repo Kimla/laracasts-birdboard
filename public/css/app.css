@@ -578,6 +578,16 @@ table {
   color: #fff;
 }
 
+.card {
+  display: block;
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .08);
+  padding: 1.25rem;
+  text-decoration: none;
+  color: #22292f;
+}
+
 /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
