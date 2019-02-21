@@ -13,10 +13,11 @@
                 <div class="mb-8">
                     <h2 class="text-grey text-lg font-normal mb-3">Tasks</h2>
 
-                    <div class="card mb-3">Lorem ipsum</div>
-                    <div class="card mb-3">Lorem ipsum</div>
-                    <div class="card mb-3">Lorem ipsum</div>
-                    <div class="card">Lorem ipsum</div>
+                    <div class="-mb-3">
+                        @foreach ($project->tasks as $task)
+                            <div class="card mb-3">{{ $task->body }}</div>
+                        @endforeach
+                    </div>
                 </div>
 
                 <div>
