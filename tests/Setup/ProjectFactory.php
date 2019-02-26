@@ -29,10 +29,12 @@ class ProjectFactory
         $project = factory(Project::class)->create([
             'owner_id' => $this->user ?? factory(User::class)
         ]);
-
-        factory(Task::class, $this->tasksCount)->create([
-            'project_id' => $project->id,
-        ]);
+        
+        if ($this->tasksCount) {
+            factory(Task::class, $this->tasksCount)->create([
+                'project_id' => $project->id,
+            ]);
+        }
 
         return $project;
     }
